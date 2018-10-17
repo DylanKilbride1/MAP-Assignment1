@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MAPAssignment1</string>
+    <string name="signupActivityEmailHint">Email</string>
+    <string name="signupActivityPasswordHint">Password</string>
+    <string-array name="subscriptionArray">
+        <item>Standard</item>
+        <item>Premium</item>
+    </string-array>
+</resources>

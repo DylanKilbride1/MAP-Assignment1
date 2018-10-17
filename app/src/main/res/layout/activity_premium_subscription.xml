@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/SubscriptionActivitiesPadding"
+    tools:context=".Activities.PremiumSubscriptionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/cardHolderEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cardHolderEmail"
+            android:text=""
+            android:hint="Card Number"/>
+
+        <Spinner
+            android:id="@+id/cardMonthSpinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/cardNumber" />
+
+        <Spinner
+            android:id="@+id/cardDateSpinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/cardMonthSpinner"
+            android:layout_below="@id/cardNumber"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

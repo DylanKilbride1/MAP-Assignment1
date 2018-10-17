@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="signupActivityEmailMarginBottom">30dp</dimen>
+    <dimen name="signupActivityPasswordMarginBottom">30dp</dimen>
+    <dimen name="signupScreenPadding">30dp</dimen>
+    <dimen name="SubscriptionActivitiesPadding">30dp</dimen>
+</resources>
