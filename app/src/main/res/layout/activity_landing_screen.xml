@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="@dimen/signupScreenPadding"
+    android:background="@drawable/signup_screen_background"
     tools:context=".Activities.LandingScreen">
 
     <RelativeLayout
@@ -17,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/signupActivityEmailMarginBottom"
+            android:textColor="#ffffff"
             android:hint="@string/signupActivityEmailHint" />
         <EditText
             android:id="@+id/passwordTextFieldLoginScreen"
@@ -24,11 +26,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/emailTextFieldLoginScreen"
             android:layout_marginBottom="@dimen/signupActivityPasswordMarginBottom"
+            android:textColor="#ffffff"
             android:hint="@string/signupActivityPasswordHint"
             android:inputType="textPassword"/>
         <Spinner
             android:id="@+id/subscriptionSpinner"
-            android:layout_width="125dp"
+            android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_below="@+id/passwordTextFieldLoginScreen"/>
     </RelativeLayout>
@@ -37,11 +40,13 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/signUpButtonLoginScreen"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
             android:layout_marginBottom="30dp"
             android:onClick="validateCredentials"
-            android:text="Sign Up"/>
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:background="@drawable/signup_screen_button"/>
     </RelativeLayout>
 </LinearLayout>

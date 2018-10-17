@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.LandingScreen">
+        <activity android:name=".Activities.LandingScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.StandardSubscriptionActivity" />
-        <activity android:name=".Activities.PremiumSubscriptionActivity"></activity>
+        <activity android:name=".Activities.StandardSubscriptionActivity"
+            android:label="Welcome"/>
+        <activity android:name=".Activities.PremiumSubscriptionActivity"
+            android:label="Premium Payment"></activity>
     </application>
 
 </manifest>
