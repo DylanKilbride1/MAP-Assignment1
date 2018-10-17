@@ -23,18 +23,29 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@+id/cardHolderEmail"
+            android:layout_marginBottom="10dp"
             android:text=""
             android:hint="Card Number"/>
 
+        <TextView
+            android:id="@+id/expiryDateTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/cardNumber"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Expiry Date: "/>
+
         <Spinner
             android:id="@+id/cardMonthSpinner"
-            android:layout_width="150dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_below="@id/cardNumber" />
+            android:layout_below="@id/cardNumber"
+            android:layout_toRightOf="@id/expiryDateTextField"/>
 
         <Spinner
             android:id="@+id/cardDateSpinner"
-            android:layout_width="150dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_toRightOf="@id/cardMonthSpinner"
             android:layout_below="@id/cardNumber"/>
